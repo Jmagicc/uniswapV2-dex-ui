@@ -1,0 +1,261 @@
+body {
+  font-family: 'Consolas', 'Arial', sans-serif;
+  background-color: #f7e0e0; /* 暗黑背景色 */
+  color: #ffffff; /* 浅灰色字体，增加对比度 */
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: #333435; /* 深灰色背景 */
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5); /* 添加阴影 */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.eth {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+.leftH {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightH {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.headerItem {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.headerItem:hover {
+  background-color: rgb(34, 42, 58);
+  cursor: pointer;
+}
+
+.connectButton {
+  background-color: #243056;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.connectButton:hover {
+  cursor: pointer;
+  color: #3b4874;
+}
+
+.mainWindow {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.tradeBox {
+  width: 550px;
+  background-color: #f7f7f7; /* 深色背景 */
+  border: 2px solid #7b7f9e; /* 星尘银 */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+.tradeBoxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+.cog {
+  color: #000000;
+  transition: 0.3s;
+}
+
+.cog:hover {
+  color: white;
+  rotate: 90deg;
+  cursor: pointer;
+}
+
+.switchButton {
+  background-color: #03f14a;
+  width: 40px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  top: 51px;
+  left: 48%; /* 调整居中 */
+  transform: translateX(-50%); /* 居中 */
+  color: #5F6783;
+  /* border: 1px solid #d8063a; */
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.dollarAmount {
+  position: absolute;
+  top: 75px;
+  left: 14px;
+  font-size: 10px;
+  color: #5F6783;
+}
+
+.switchButton:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.inputs {
+  position: relative;
+  align-items: center;
+  height: 180px;
+}
+
+.inputs Input {
+  margin-bottom: 60px; 
+}
+.assetOne{
+  position: relative;
+  width: 30%;
+  height: 30px;
+  background-color: #40b67b;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 400px;
+  top: -191px;
+  padding: 0 10px;
+  margin: 10px 5px;
+}
+.assetTwo {
+  position: relative;
+  width: 30%;
+  height: 30px;
+  background-color: #40b67b;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 400px;
+  top: -141px;
+  padding: 0 10px;
+  margin: 10px 5px;
+}
+
+.assetLogo {
+  height: 20px;
+  width: 20px;
+}
+
+.swapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0db9b1;
+  width: calc(100%);
+  height: 55px;
+  font-size: 28px;
+  border-radius: 12px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.swapButton[disabled] {
+  background-color: #243056;
+  opacity: 0.4;
+  color: #5982f39b;
+}
+
+.swapButton[disabled]:hover {
+  cursor: not-allowed;
+  background-color: #243056;
+}
+
+.swapButton:hover {
+  cursor: pointer;
+  background-color: #3b4874;
+}
+
+.tokenLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.modalContent {
+  border-top: 1px solid #363e54;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tokenChoice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tokenChoice:hover {
+  cursor: pointer;
+  background-color: #1f2639;
+}
+
+.tokenName {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tokenTicker {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #51596f;
+}
